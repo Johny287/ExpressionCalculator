@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Application\Models\BinaryStrOperationContext.cs" />
+    <Compile Remove="Application\Models\OperationType.cs" />
+    <Compile Remove="Application\Models\UnaryStrOperationContext.cs" />
+    <Compile Remove="Application\Services\ExpressionParserOld.cs" />
+    <Compile Remove="Application\Services\StringParserOld.cs" />
+  </ItemGroup>
+
+</Project>
