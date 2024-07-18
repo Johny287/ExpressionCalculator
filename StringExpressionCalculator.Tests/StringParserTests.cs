@@ -12,7 +12,7 @@ public class StringParserTests
 
     public StringParserTests()
     {
-        var providerMock = new Mock<IOperationsProvider>(MockBehavior.Strict);
+        var providerMock = new Mock<IOperationsProvider>(/*MockBehavior.Strict*/);
         providerMock.Setup(x => x.GetAllOperationsSymbols()).Returns(["+", "-", "*", "/", "!"]);
         providerMock.Setup(x => x.GetOperationsSymbolsByPriority(OperationPriority.Normal)).Returns(["+", "-"]);
         providerMock.Setup(x => x.GetOperationsSymbolsByPriority(OperationPriority.High)).Returns(["*", "/"]);

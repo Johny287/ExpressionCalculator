@@ -7,5 +7,6 @@ public enum OperationPriority : byte
 {
     Normal,     // + -
     High,       // * /
+    Higher,     // ^ √
     Highest,    // любые унарные (например факториал)
 }

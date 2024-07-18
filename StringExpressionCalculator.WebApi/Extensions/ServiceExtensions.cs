@@ -26,5 +26,6 @@ public static class ServiceExtensions
         services.AddScoped<IMathOperation, MultiplicationOperation>();
         services.AddScoped<IMathOperation, DivisionOperation>();
         services.AddScoped<IMathOperation, FactorialOperation>();
+        services.AddScoped<IMathOperation, ExponentiationOperation>();
     }
 }
